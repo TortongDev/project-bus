@@ -37,6 +37,7 @@
             background-color: white;
        }
        .chiar {
+            cursor: pointer;
             width: 100%;
             height: 100%;
             background-color: rgb(197, 197, 197);
@@ -59,41 +60,78 @@
        .box-chiar:hover {
             transition: .7s;
        }
+       input[type=checkbox] {
+            display: none;
+       }
+       .form-input {
+            background-color: silver;
+            height: 100px;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+       }
     </style>
 </head>
 <body>
+    <form action="./data.php" method="post">
+    <div class="form-input">
+        <div class="form-group">
+            <label for="PER_TEL">เบอร์โทรศัพท์</label><br />
+            <input type="text" id="PER_TEL">
+        </div>
+        <div class="form-group">
+            <label for="PER_TEL">เบอร์โทรศัพท์</label><br />
+            <input type="text" id="PER_TEL">
+        </div>
+    </div>
     <article class="wrapper">
+        
         <section class="wrapper-bus">
-            
             <div class="box-chiar">
-                <div class="chiar">A1</div>
-                <div class="chiar">A2</div>
-                <div class="chiar"></div>
-                <div class="chiar">A3</div>
+                <label for="A1" class="chiar">A1</label>
+                <label for="A2" class="chiar">A2</label>
+                <label for="" class="chiar"></label>
+                <label for="A3" class="chiar">A3</label>
+                <input type="checkbox" name="DATA[]" id="A1" value="A1">
+                <input type="checkbox" name="DATA[]" id="A2" value="A2">
+                <input type="checkbox" name="DATA[]" id="A3" value="A3">
             </div>
             <div class="box-chiar">
-                <div class="chiar">B1</div>
-                <div class="chiar">B2</div>
-                <div class="chiar"></div>
-                <div class="chiar">B3</div>
+                <label for="B1" class="chiar">B1</label>
+                <label for="B2" class="chiar">B2</label>
+                <label class="chiar"></label>
+                <label for="B3" class="chiar">B3</label>
+                <input type="checkbox" name="DATA[]" id="B1" value="B1">
+                <input type="checkbox" name="DATA[]" id="B2" value="B2">
+                <input type="checkbox" name="DATA[]" id="B3" value="B3">
             </div>
             <div class="box-chiar">
-                <div class="chiar">C1</div>
-                <div class="chiar">C2</div>
-                <div class="chiar"></div>
-                <div class="chiar">C3</div>
+                <label for="C1" class="chiar">C1</label>
+                <label for="C2" class="chiar">C2</label>
+                <label class="chiar"></label>
+                <label for="C3" class="chiar">C3</label>
+                <input type="checkbox" name="DATA[]" id="C1" value="C1">
+                <input type="checkbox" name="DATA[]" id="C2" value="C2">
+                <input type="checkbox" name="DATA[]" id="C3" value="C3">
             </div>
             <div class="box-chiar">
-                <div class="chiar">D1</div>
-                <div class="chiar">D2</div>
-                <div class="chiar"></div>
-                <div class="chiar">D3</div>
+                <label for="D1" class="chiar">D1</label>
+                <label for="D2" class="chiar">D2</label>
+                <label class="chiar"></label>
+                <label for="D3" class="chiar">D3</label>
+                <input type="checkbox" name="DATA[]" id="D1" value="D1">
+                <input type="checkbox" name="DATA[]" id="D2" value="D2">
+                <input type="checkbox" name="DATA[]" id="D3" value="D3">
             </div>
             <div class="box-chiar">
-                <div class="chiar">E1</div>
-                <div class="chiar">E2</div>
-                <div class="chiar"></div>
-                <div class="chiar">E3</div>
+                <label class="chiar">E1</label>
+                <label class="chiar">E2</label>
+                <label class="chiar"></label>
+                <label class="chiar">E3</label>
+                <input for="E1" type="checkbox" name="DATA[]" id="E1" value="E1">
+                <input for="E2" type="checkbox" name="DATA[]" id="E2" value="E2">
+                <input for="E3" type="checkbox" name="DATA[]" id="E3" value="E3">
             </div>
 
         </section>
@@ -101,5 +139,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus maiores enim!
         </section>
     </article>
+    <input type="submit" name="submit" value="Send Data">
+    </form>
 </body>
 </html>

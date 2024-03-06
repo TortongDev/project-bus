@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charoenbus</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(235, 235, 235);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       .wrapper {
+            margin-block: 30px;
+            margin: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 500px;
+            column-gap: 20px;
+       }
+       .wrapper-bus {
+            border-radius: 10px;
+        /* row-gap: ; */
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            grid-gap: 10px;
+       }
+       .wrapper-details {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+       }
+       .chiar {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(197, 197, 197);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       }
+       .box-chiar {
+            cursor: pointer;
+            margin: 5px;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 100px;
+       }
+       .box-chiar .chiar:nth-child(3) {
+            background-color: white !important;
+            cursor: unset;
+       }
+       .box-chiar:hover {
+            transition: .7s;
+       }
+    </style>
+</head>
+<body>
+    <article class="wrapper">
+        <section class="wrapper-bus">
+            
+            <div class="box-chiar">
+                <div class="chiar">A1</div>
+                <div class="chiar">A2</div>
+                <div class="chiar"></div>
+                <div class="chiar">A3</div>
+            </div>
+            <div class="box-chiar">
+                <div class="chiar">B1</div>
+                <div class="chiar">B2</div>
+                <div class="chiar"></div>
+                <div class="chiar">B3</div>
+            </div>
+            <div class="box-chiar">
+                <div class="chiar">C1</div>
+                <div class="chiar">C2</div>
+                <div class="chiar"></div>
+                <div class="chiar">C3</div>
+            </div>
+            <div class="box-chiar">
+                <div class="chiar">D1</div>
+                <div class="chiar">D2</div>
+                <div class="chiar"></div>
+                <div class="chiar">D3</div>
+            </div>
+            <div class="box-chiar">
+                <div class="chiar">E1</div>
+                <div class="chiar">E2</div>
+                <div class="chiar"></div>
+                <div class="chiar">E3</div>
+            </div>
+
+        </section>
+        <section class="wrapper-details">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus maiores enim!
+        </section>
+    </article>
+</body>
+</html>
